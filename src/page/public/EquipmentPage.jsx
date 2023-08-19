@@ -5,9 +5,9 @@ import PageFooter from "../../components/public/universal/PageFooter/pageFooter"
 // import universal page css
 import "./css/universal.css";
 // import page content
-import Content from "../..//components/public/AboutUs-AboutUsPage/aboutUs";
+import Content from "../..//components/public/EquipmentComponent-EquipmentPage/equipmentComponent";
 
-const AboutPage = () => {
+const EquipmentPage = () => {
    return (
       <>
          <div className="Page">
@@ -20,4 +20,5 @@ const AboutPage = () => {
       </>
    );
 };
-export default AboutPage;
+
+export default EquipmentPage;
