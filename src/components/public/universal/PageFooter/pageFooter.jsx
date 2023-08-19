@@ -1,6 +1,6 @@
 import React from "react";
 //import css
-import "pageFooter.css";
+import "./pageFooter.css";
 
 const pageFooter = () => {
    return (

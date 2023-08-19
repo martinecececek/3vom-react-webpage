@@ -5,9 +5,9 @@ import PageFooter from "../../components/public/universal/PageFooter/pageFooter"
 // import universal page css
 import "./css/universal.css";
 // import page content
-import Content from "../..//components/public/ContactComponent-ContactPage/contactComponent";
+import Content from "../../components/public/AboutUs-AboutUsPage/aboutUs";
 
-const ContactPage = () => {
+const AboutPage = () => {
    return (
       <>
          <div className="Page">
@@ -20,4 +20,4 @@ const ContactPage = () => {
       </>
    );
 };
-export default ContactPage;
+export default AboutPage;

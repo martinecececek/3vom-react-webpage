@@ -5,7 +5,7 @@ import PageFooter from "../../components/public/universal/PageFooter/pageFooter"
 // import universal page css
 import "./css/universal.css";
 // import page content
-import Post from "../..//components/public/EquipmentComponent-EquipmentPage/equipmentComponent";
+import Post from "../../components/public/EquipmentComponent-EquipmentPage/equipmentComponent";
 
 const GalleryPage = () => {
    const [data, setData] = useState([]);

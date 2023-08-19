@@ -1,6 +1,6 @@
 import React from "react";
 //import css
-import "pageHeader.css";
+import "./pageHeader.css";
 
 const pageHeader = () => {
    return (

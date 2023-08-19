@@ -5,7 +5,7 @@ import PageFooter from "../../components/public/universal/PageFooter/pageFooter"
 // import universal page css
 import "./css/universal.css";
 // import page content
-import Content from "../..//components/public/EquipmentComponent-EquipmentPage/equipmentComponent";
+import Content from "../../components/public/EquipmentComponent-EquipmentPage/equipmentComponent";
 
 const EquipmentPage = () => {
    return (

@@ -5,7 +5,7 @@ import PageFooter from "../../components/public/universal/PageFooter/pageFooter"
 // import universal page css
 import "./css/universal.css";
 // import content of page
-import Post from "../../components/public/galleryPost-GalleryPage/galleryPost";
+import Post from "../../components/public/ProgramPost-ProgramPage/ProgramEvent";
 
 const ProgramPage = () => {
    const [data, setData] = useState([]);
