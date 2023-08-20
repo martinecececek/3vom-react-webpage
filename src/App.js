@@ -1,42 +1,44 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import public pages
 import HomePage from "./page/public/HomePage";
-import AboutUsPage from "./page/public/AboutPage";
+import AboutPage from "./page/public/AboutPage";
 import ContactPage from "./page/public/ContactPage";
-import EquipmentPage from "./page/public/EquipmentPage";
-import ProgramPage from "./page/public/ProgramPage";
 import GalleryPage from "./page/public/GalleryPage";
-// import administrator pages
+import ProgramPage from "./page/public/ProgramPage";
+import EquipmentPage from "./page/public/EquipmentPage"; //TODO: add equipment page
+//import admin page
 import AdministratorPage from "./page/private/AdministratorPage";
-import GalleryEditPage from "./page/private/GalleryEditPage";
-import GalleryAddPage from "./page/private/GalleryAddPage";
-import ProgramEditPage from "./page/private/ProgramEditPage";
-import ProgramAddPage from "./page/private/ProgramAddPage";
+import GalleryAdd from "./page/private/GalleryAddPage";
+import GalleryEdit from "./page/private/GalleryEditPage";
+import ProgramAdd from "./page/private/ProgramAddPage";
+import ProgramEdit from "./page/private/ProgramEditPage";
+// import error page
+import NoPage from "./page/noPage";
 
-function App() {
+export default function App() {
    return (
       <>
          <BrowserRouter>
             <Routes>
-               {/* route to index page */}
+               {/* index page route */}
                <Route index element={<HomePage />} />
-               {/* other public pages */}
+               {/* public page routes */}
                <Route path="/domu" element={<HomePage />} />
-               <Route path="/onas" element={<AboutUsPage />} />
+               <Route path="/onas" element={<AboutPage />} />
                <Route path="/kontakty" element={<ContactPage />} />
                <Route path="/galerie" element={<GalleryPage />} />
                <Route path="/program" element={<ProgramPage />} />
                <Route path="/vybaveni" element={<EquipmentPage />} />
-               {/* routing to the administrator pages */}
-               <Route path="admin" element={<AdministratorPage />} />
-               <Route path="admin/add-gallery" element={<GalleryAddPage />} />
-               <Route path="admin/edit-gallery" element={<GalleryEditPage />} />
-               <Route path="admin/add-program" element={<ProgramAddPage />} />
-               <Route path="admin/edit-program" element={<ProgramEditPage />} />
+               {/* admin pages routes */}
+               <Route path="/admin" element={<AdministratorPage />} />
+               <Route path="/admin/add-gallery" element={<GalleryAdd />} />
+               <Route path="/admin/edit-gallery" element={<GalleryEdit />} />
+               <Route path="/admin/add-program" element={<ProgramAdd />} />
+               <Route path="/admin/edit-program" element={<ProgramEdit />} />
+               {/* error page route*/}
+               <Route path="/*" element={<NoPage />} />
             </Routes>
          </BrowserRouter>
       </>
    );
 }
-
-export default App;
